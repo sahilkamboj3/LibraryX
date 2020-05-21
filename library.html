@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Library</title>
+        <link rel="stylesheet" href="library.css">
+        <link rel="icon" href="books.png" width="200">
+    </head>
+
+    <body>
+
+        <div class="wrapper">
+
+            <h1 class="project-title">LibraryX</h1>
+
+            <div class="date-time">
+                <h3 id="date"></h3>
+                <div id="month-year-day">
+                    <h3 id="day"></h3>
+                    <h3 id="month-year"></h3>
+                </div>
+            </div>
+
+            <div class="book-adder">
+                <input type="text" placeholder="Title..." id="add-title">
+                <input type="text" placeholder="Author..." id="add-author">
+                <input type="number" placeholder="Number of Pages..." min="0" id="add-num-pages">
+                <button id="add-btn">Add book</button>
+            </div>
+
+            <h1 class="your-books-title">Your reading list</h1>
+
+            <div class="book-holder"></div>
+
+            <div id="top-books">
+                <h1 id="top-books-header">Search books</h1>
+                <div class="book-searcher">
+                    <input type="text" placeholder="Title..." id="search-title">
+                    <button id="search-btn">Submit</button>
+                </div>
+                <div id="suggested-books"></div>
+            </div>
+
+            <div id="finished-books">
+                <h1 id="finished-books-header">Finished</h1>
+                <div class="finished-books-holder"></div>
+            </div>
+
+            <footer id="footer">
+                <p>2020 &copy; LibraryX. Your Personal Go-To Library.</p>
+            </footer>
+
+        </div>
+        
+    </body>
+    <script src="library.js" type="text/javascript"></script>
+</html>
